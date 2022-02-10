@@ -25,43 +25,33 @@ void draw() {
  fill(0,245,0);
  ellipse(100,115,48,36);
  
- // the turned off effect 
- for (int i = 0; i <=3; i++) {
-
-   if ( i == 0) 
-  { fill(252,3,11);
- ellipseMode(CENTER);
- ellipse(100,35,48,36);
- 
-  fill(140,142,141);
- ellipse(100,75,48,36);
- 
- fill(140,142,141);
- ellipse(100,115,48,36);
-  }
   
-  if (i == 1)
-  {  fill(140,142,141);
- ellipseMode(CENTER);
- ellipse(100,35,48,36);
-    
+   // the turned off effect 
+  
+ if (frameCount >=0 && frameCount <=100) 
+  {
+   fill(252,3,11);
+   ellipseMode(CENTER);
+   ellipse(100,35,48,36);
+  }
+  else if (frameCount >=100 && frameCount <=150) 
+  {
     fill(250,255,8);
- ellipse(100,75,48,36);
- 
-  fill(140,142,141);
- ellipse(100,115,48,36);
+    ellipse(100,75,48,36);
   }
-  
-  if (i == 2)
-  { fill(140,142,141);
- ellipseMode(CENTER);
- ellipse(100,35,48,36);
+  else if (frameCount >=150) 
+  {
+   fill(140,142,141);
+   ellipse(100,115,48,36);
+   
+   fill(140,142,141);
+   ellipseMode(CENTER);
+   ellipse(100,35,48,36);
     
-    fill(140,142,141);
- ellipse(100,75,48,36);
+   fill(140,142,141);
+   ellipse(100,75,48,36);
  
   fill(0,245,0);
- ellipse(100,115,48,36);
+  ellipse(100,115,48,36);
   }
-}
 }
