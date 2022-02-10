@@ -1,15 +1,13 @@
-String name = "Hi, my name is Mohamed";
-String n = " I am ";
+String name = "Mohamed";
 int age = 35;
 boolean happy = true;
-String m = "years old";
-String l = "I";
-String c = "clap my hands";
-String dont = "";
 
-if (!happy)
+println("Hi, my name is " + name); 
+println(" I am " + age + "years old "); 
+
+if(!happy)
 {
-   dont = "dont";
+println("i dont clap my hands"); 
+}else{
+  println("i clap my hands"); 
 }
-
-println(name + n + age + " " + m +" "+ l + " " + dont + " " + c); 
